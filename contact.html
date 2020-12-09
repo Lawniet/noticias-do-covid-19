@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Notícias do COVID-19</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<body class="item-light-grey">
+      <script src="script.js"></script>
+
+<!-- Top container -->
+<div class="item-bar item-top item-black item-large" style="z-index:4">
+  <button class="item-bar-item item-button item-hide-large item-hover-none item-hover-text-light-grey" onclick="item_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="item-bar-item item-right"> Gama Academy</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="item-sidebar item-collapse item-white item-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="item-container">
+    <h5>CORONAVÍRUS - BRASIL</h5>
+  </div>
+  <hr>
+  <div class="item-bar-block">
+    <a href="#" class="item-bar-item item-button item-padding-16 item-hide-large item-dark-grey item-hover-black" onclick="item_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="index.html" class="item-bar-item item-button item-padding"><i class="fa fa-bank fa-fw"></i> Home</a>
+    <a href="about.html" class="item-bar-item item-button item-padding"><i class="fas fa-book-open"></i> Sobre</a>
+    <a href="contact.html" class="item-bar-item item-button item-padding item-teal"><i class ="fas fa-address-card fa-fw"></i> Contato</a>
+    <a href="knowmore.html" class="item-bar-item item-button item-padding"><i class="fa fa-eye fa-fw"></i> Saiba Mais</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="item-overlay item-hide-large item-animate-opacity" onclick="item_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="item-main" style="margin-left:300px;margin-top:43px;">
+
+
+<!-- Page Container -->
+<div class="item-content item-margin-top" style="max-width:1400px;">
+
+    <!-- The Contact Section -->
+  
+  <div class="item-container item-content item-padding-64" style="max-width:800px" id="contact">
+    <div class="item-card-4 item-white item-text-grey">
+    <h2 class="item-wide item-center">CONTACT</h2>
+    <p class="item-opacity item-center"><i>Fan? Drop a note!</i></p>
+    <div class="item-row item-padding-32">
+      <div class="item-col m6 item-large item-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="item-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="item-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="item-half">
+              <input class="item-input item-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="item-half">
+              <input class="item-input item-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="item-input item-border" type="text" placeholder="Message" required name="Message">
+          <button class="item-button item-black item-section item-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- Footer -->
+  <footer class="item-container item-padding-16 item-dark-grey">
+	  <div class="item-row">
+		  <div class="item-container item-third">
+			<h5 class="item-bottombar item-border-teal">Copyright &copy; 2020 Gama Academy</h5>
+		  </div>
+		  <div class="item-container item-third">
+			<h5 class="item-bottombar item-border-teal">Dados obtidos em covid.saude.gov</h5>
+		  </div>
+		  <div class="item-container item-third">
+			<h5 class="item-bottombar item-border-teal">Desenvolvido por <a href="" target="_blank">Lauany Reis da Silva</a></h5>
+		  </div>
+	  </div>
+  </footer>
+
+
+  <!-- End page content -->
+</div>
+
+<script>
+</script>
+
+</body>
+</html>

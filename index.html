@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<title>Notícias do COVID-19</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<body class="item-light-grey">
+      <script src="script.js"></script>
+
+<!-- Top container -->
+<div class="item-bar item-top item-black item-large" style="z-index:4">
+  <button class="item-bar-item item-button item-hide-large item-hover-none item-hover-text-light-grey" onclick="item_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="item-bar-item item-right"> Gama Academy</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="item-sidebar item-collapse item-white item-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="item-container">
+    <h5>CORONAVÍRUS - BRASIL</h5>
+  </div>
+  <hr>
+    <div class="item-bar-block">
+    <a href="#" class="item-bar-item item-button item-padding-16 item-hide-large item-dark-grey item-hover-black" onclick="item_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="index.html" class="item-bar-item item-button item-padding item-teal"><i class="fa fa-bank fa-fw"></i> Home</a>
+    <a href="about.html" class="item-bar-item item-button item-padding"><i class="fas fa-book-open"></i> Sobre</a>
+    <a href="contact.html" class="item-bar-item item-button item-padding"><i class ="fas fa-address-card fa-fw"></i> Contato</a>
+    <a href="knowmore.html" class="item-bar-item item-button item-padding"><i class="fa fa-eye fa-fw"></i> Saiba Mais</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="item-overlay item-hide-large item-animate-opacity" onclick="item_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="item-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="item-container" style="padding-top:22px">
+    <h5><b><i class="fas fa-bell"></i> COVID-19 no Brasil em números</b></h5>
+  </header>
+
+  <div class="item-row-padding item-margin-bottom">
+  <div class="item-quarter">
+      <div class="item-container item-blue item-text-white item-padding-16">
+        <div class="item-left"><i class="fa fa-users item-xxxlarge"></i></div>
+        <div class="item-right">
+          <h3>210.147.125</h3>
+        </div>
+        <div class="item-clear"></div>
+        <h4>População total</h4>
+      </div>
+    </div>
+    <div class="item-quarter">
+      <div class="item-container item-red item-padding-16">
+        <div class="item-left"><i class="fas fa-skull-crossbones item-xxxlarge"></i></div>
+        <div class="item-right">
+          <h3>177.317</h3>
+        </div>
+        <div class="item-clear"></div>
+        <h4>Óbitos acumulados</h4>
+      </div>
+    </div>
+    <div class="item-quarter">
+      <div class="item-container item-orange item-text-white item-padding-16">
+        <div class="item-left"><i class="fas fa-viruses item-xxxlarge"></i></div>
+        <div class="item-right">
+          <h3>6.623.911</h3>
+        </div>
+        <div class="item-clear"></div>
+        <h4>Casos acumulados</h4>
+      </div>
+    </div>
+        <div class="item-quarter">
+      <div class="item-container item-teal item-padding-16">
+        <div class="item-left"><i class="fas fa-medkit item-xxxlarge"></i></div>
+        <div class="item-right">
+          <h3>5.801.067</h3>
+        </div>
+        <div class="item-clear"></div>
+        <h4>Casos recuperados</h4>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <div class="item-container">
+      <!-- Header -->
+  <header class="item-container" style="padding-top:22px">
+    <h5><b><i class="fas fa-info-circle"></i> Estatísticas gerais</b></h5>
+  </header>
+		<!-- Automatic Slideshow Images -->		
+<div class="item-slideshow-container">
+
+<div class="item-mySlides item-fade">
+  <div class="item-numbertext">1 / 3</div>
+  <img src="images/cases_map.png" style="width:100%">
+  <div class="item-text">Casos de COVID-19 por Município de notificação</div>
+</div>
+<div class="item-mySlides item-fade">
+  <div class="item-numbertext">2 / 3</div>
+  <img src="images/cases_graph.png" style="width:100%">
+  <div class="item-text">Casos acumulados de COVID-19 por data de notificação</div>
+</div>
+<div class="item-mySlides item-fade">
+  <div class="item-numbertext">3 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="item-text">Caption Text</div>
+</div>
+
+<a class="item-prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="item-next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="item-dot" onclick="currentSlide(1)"></span> 
+  <span class="item-dot" onclick="currentSlide(2)"></span> 
+  <span class="item-dot" onclick="currentSlide(3)"></span> 
+</div>
+        <span>Fonte: Secretarias Estaduais de Saúde. Brasil, 2020</span>
+  </div>
+  <hr>
+  <div class="item-container">
+          <!-- Header -->
+  <header class="item-container" style="padding-top:22px">
+    <h5><b><i class="fas fa-info-circle"></i> Estimatimativas por estados</b></h5>
+  </header>
+        <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-yellow item-large"></i> Centro-Oeste</button>
+  <div class="item-accordion-panel">
+<br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar estado" title="Digite um estado ou sigla">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">Estado</th>
+    <th style="width:50%;">Casos confirmados</th>
+    <th style="width:30%;">Atualização</th>
+  </tr>
+  <tr>
+    <td>DF</td>
+    <td></td>
+    <td><i></i></td>
+  </tr>
+  <tr>
+    <td>GO</td>
+    <td></td>
+    <td><i></i></td>
+  </tr>
+  <tr>
+    <td>MS</td>
+    <td></td>
+    <td><i></i></td>
+  </tr>
+  <tr>
+    <td>MT</td>
+    <td></td>
+    <td><i></i></td>
+  </tr> 
+</table>
+  </div>
+  
+  <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-red item-large"></i> Nordeste</button>
+  <div class="item-accordion-panel">
+<br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar estado" title="Digite um estado ou sigla">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">Estado</th>
+    <th style="width:50%;">Casos confirmados</th>
+    <th style="width:30%;">Atualização</th>
+  </tr>
+  <tr>
+            <td>AL</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>  
+          <tr>
+            <td>BA</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>CE</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>	
+		  <tr>
+            <td>MA</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>PB</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>PE</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>PI</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>RN</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>SE</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+          </table>
+  </div>
+  
+    <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-yellow item-large"></i> Norte</button>
+  <div class="item-accordion-panel">
+<br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar estado" title="Digite um estado ou sigla">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">Estado</th>
+    <th style="width:50%;">Casos confirmados</th>
+    <th style="width:30%;">Atualização</th>
+  </tr>
+  <tr>
+            <td>AC</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		   <tr>
+            <td>AM</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		   <tr>
+            <td>AP</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		   <tr>
+            <td>PA</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		   <tr>
+            <td>RO</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		   <tr>
+            <td>RR</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		   <tr>
+            <td>TO</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+          </table>
+  </div>
+  
+      <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-red item-large"></i> Sudeste</button>
+  <div class="item-accordion-panel">
+<br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar estado" title="Digite um estado ou sigla">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">Estado</th>
+    <th style="width:50%;">Casos confirmados</th>
+    <th style="width:30%;">Atualização</th>
+  </tr>
+   <tr>
+            <td>ES</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>MG</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>RJ</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>SP</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+          </table>
+  </div>
+  
+      <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-orange item-large"></i> Sul</button>
+  <div class="item-accordion-panel">
+<br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar estado" title="Digite um estado ou sigla">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">Estado</th>
+    <th style="width:50%;">Casos confirmados</th>
+    <th style="width:30%;">Atualização</th>
+  </tr>
+  <tr>
+            <td>SC</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>PR</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+		  <tr>
+            <td>RS</td>
+            <td></td>
+            <td><i></i></td>
+          </tr>
+          </table>
+  </div>
+  <span>Fonte: Secretarias Estaduais de Saúde. Brasil, 2020</span>
+  </div>
+
+
+  
+  <hr>
+  
+  <div class="item-container">
+    <!-- Header -->
+  <header class="item-container" style="padding-top:22px">
+    <h5><b><i class="fas fa-info-circle"></i>Utilização dos hospitais por estado</b></h5>
+  </header>
+    <p>Centro-Oeste</p>
+    <div class="item-grey">
+      <div class="item-container item-center item-padding item-green" style="width:25%">25%</div>
+    </div>
+
+    <p>Nordeste</p>
+    <div class="item-grey">
+      <div class="item-container item-center item-padding item-orange" style="width:50%">50%</div>
+    </div>
+
+    <p>Norte</p>
+    <div class="item-grey">
+      <div class="item-container item-center item-padding item-red" style="width:75%">75%</div>
+    </div>
+	
+	<p>Sudeste</p>
+    <div class="item-grey">
+      <div class="item-container item-center item-padding item-red" style="width:75%">75%</div>
+    </div>
+	
+	<p>Sul</p>
+    <div class="item-grey">
+      <div class="item-container item-center item-padding item-red" style="width:75%">75%</div>
+    </div>
+  <br>
+    <button class="item-button item-dark-grey">Mais notícias  <i class="fa fa-arrow-right"></i></button>
+  </div>
+  
+  <hr>
+
+  
+  <div class="item-container">
+     <!-- Header -->
+  <header class="item-container" style="padding-top:22px">
+    <h5><b><i class="fas fa-info-circle"></i>Principais notícias</b></h5>
+  </header>
+    <div class="item-row">
+      <div class="item-col m2 text-center">
+        <img class="item-circle" src="images/icon_g1.png" style="width:96px;height:96px">
+      </div>
+      <div class="item-col m10 item-container">
+        <h4>g1.globo.com <span class="item-opacity item-medium"> 09/12/2020, 08:15 AM</span></h4>
+        <p>Vacina contra a Covid-19: entenda se quem já teve a doença deve ser imunizado</p><a href="https://g1.globo.com/bemestar/vacina/noticia/2020/12/09/vacina-contra-a-covid-19-entenda-se-quem-ja-teve-a-doenca-deve-ser-imunizado.ghtml" target="_blank">
+		Ler mais
+		</a>
+      </div>
+    </div>
+<br>
+    <div class="item-row">
+      <div class="item-col m2 text-center">
+        <img class="item-circle" src="images/icon_r7.png" style="width:96px;height:96px">
+      </div>
+      <div class="item-col m10 item-container">
+        <h4>noticias.r7.com <span class="item-opacity item-medium">01/03/2020, 07:25 PM</span></h4>
+        <p>Como limpar o celular para se proteger do coronavírus</p><a href="https://noticias.r7.com/tecnologia-e-ciencia/como-limpar-o-celular-para-se-proteger-do-coronavirus-02042020" target="_blank">
+		Ler mais
+		</a>
+      </div>
+    </div>
+<br>
+    <div class="item-row">
+      <div class="item-col m2 text-center">
+        <img class="item-circle" src="images/icon_bbc.png" style="width:96px;height:96px">
+      </div>
+      <div class="item-col m10 item-container">
+        <h4>bbc.com <span class="item-opacity item-medium">08/11/2020, 08:01 PM</span></h4>
+        <p>A mulher de 90 anos que estreou vacinação contra covid-19 no Reino Unido</p><a href="https://www.bbc.com/portuguese/55240348" target="_blank">
+		Ler mais
+		</a>
+      </div>
+    </div><br>
+    <div class="item-row">
+      <div class="item-col m2 text-center">
+        <img class="item-circle" src="images/icon_elpais.png" style="width:96px;height:96px">
+      </div>
+      <br>
+      <div class="item-col m10 item-container">
+        <h4>elpais.com <span class="item-opacity item-medium">08/11/2020, 04:37 PM</span></h4>
+        <p>Novos relatórios reforçam eficácia e segurança das primeiras vacinas contra o coronavírus</p>
+		<a href="https://brasil.elpais.com/ciencia/2020-12-08/novos-relatorios-reforcam-eficacia-e-seguranca-das-primeiras-vacinas-contra-o-coronavirus.html" target="_blank">
+		Ler mais
+		</a>
+      </div>
+      <br>
+    </div>
+  </div>
+  <br>
+
+   <!-- Footer -->
+  <footer class="item-container item-padding-16 item-dark-grey">
+	  <div class="item-row">
+		  <div class="item-container item-third">
+			<h5 class="item-bottombar item-border-teal">Copyright &copy; 2020 Gama Academy</h5>
+		  </div>
+		  <div class="item-container item-third">
+			<h5 class="item-bottombar item-border-teal">Dados obtidos em covid.saude.gov</h5>
+		  </div>
+		  <div class="item-container item-third">
+			<h5 class="item-bottombar item-border-teal">Desenvolvido por <a href="https://github.com/Lawniet" target="_blank">Lauany Reis da Silva</a></h5>
+		  </div>
+	  </div>
+  </footer>
+
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function item_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function item_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("item-mySlides");
+  var dots = document.getElementsByClassName("item-dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+var acc = document.getElementsByClassName("item-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
