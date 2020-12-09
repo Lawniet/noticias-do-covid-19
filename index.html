@@ -86,12 +86,11 @@
       </div>
     </div>
   </div>
-  
-  <br>
+  <br> <hr> 
   <div class="item-container">
       <!-- Header -->
   <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-info-circle"></i> Estatísticas gerais</b></h5>
+    <h5><b><i class="fas fa-photo-video"></i> Estatísticas visuais </b></h5>
   </header>
 		<!-- Automatic Slideshow Images -->		
 <div class="item-slideshow-container">
@@ -129,7 +128,7 @@
   <div class="item-container">
           <!-- Header -->
   <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-info-circle"></i> Estimatimativas por estados</b></h5>
+    <h5><b><i class="fas fa-clipboard-list"></i> Estimatimativas por estados</b></h5>
   </header>
         <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-yellow item-large"></i> Centro-Oeste</button>
   <div class="item-accordion-panel">
@@ -338,14 +337,12 @@
   <span>Fonte: Secretarias Estaduais de Saúde. Brasil, 2020</span>
   </div>
 
-
-  
   <hr>
   
   <div class="item-container">
     <!-- Header -->
   <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-info-circle"></i>Utilização dos hospitais por estado</b></h5>
+    <h5><b><i class="fas fa-signal"></i> Utilização dos hospitais por estado</b></h5>
   </header>
     <p>Centro-Oeste</p>
     <div class="item-grey">
@@ -372,7 +369,7 @@
       <div class="item-container item-center item-padding item-red" style="width:75%">75%</div>
     </div>
   <br>
-    <button class="item-button item-dark-grey">Mais notícias  <i class="fa fa-arrow-right"></i></button>
+    <button class="item-button item-dark-grey">Mais informações  <i class="fa fa-arrow-right"></i></button>
   </div>
   
   <hr>
@@ -381,7 +378,7 @@
   <div class="item-container">
      <!-- Header -->
   <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-info-circle"></i>Principais notícias</b></h5>
+    <h5><b><i class="fas fa-newspaper"></i> Principais notícias</b></h5>
   </header>
     <div class="item-row">
       <div class="item-col m2 text-center">
@@ -434,7 +431,27 @@
     </div>
   </div>
   <br>
-
+<hr>
+  <div class="item-container">
+     <!-- Header -->
+  <header class="item-container" style="padding-top:22px">
+    <h5><b><i class="fas fa-lightbulb"></i> Dicas simples evitar o COVID-19</b></h5>
+  </header>
+  <div class="item-white item-text-grey item-card-4">
+<ul id="myUL">
+  <li><i class="fas fa-house-user"></i> FICAR EM CASA</li>
+  <li><i class="fas fa-user-clock"></i> PLANEJAR BEM AS SAÍDAS </li>
+  <li><i class="fas fa-head-side-mask"></i> CUBRIR TOSSE OU ESPIRRO</li>
+  <li><i class="fas fa-users-slash"></i> EVITAR AGLOMERAÇÕES</li>
+  <li><i class="fas fa-people-arrows"></i> MANTER O DISTANCIAMENTO SOCIAL</li>
+  <li><i class="fas fa-hand-sparkles"></i> EVITAR TOCAR NO ROSTO</li>
+  <li><i class="fas fa-tint-slash"></i> EVITAR COMPARTILHAR ITENS PESSOAIS</li>
+  <li><i class="fas fa-hands-wash"></i> LAVAR AS MÃOS COM SABÃO: 20 SEGUNDOS</li>
+  <li><i class="fas fa-hand-holding-water"></i> UTILIZAR ÁLCOOL GEL</li>
+</ul>
+</div>
+</div>
+<br>
    <!-- Footer -->
   <footer class="item-container item-padding-16 item-dark-grey">
 	  <div class="item-row">
@@ -537,6 +554,35 @@ function myFunction() {
     }       
   }
 }
+
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 </script>
 
 </body>

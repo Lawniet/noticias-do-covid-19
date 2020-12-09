@@ -39,39 +39,52 @@
 <!-- !PAGE CONTENT! -->
 <div class="item-main" style="margin-left:300px;margin-top:43px;">
 
+   <!-- Header -->
+  <header class="item-container" style="padding-top:22px">
+    <h5><b> Entre em contato</b></h5>
+  </header>
+
 
 <!-- Page Container -->
 <div class="item-content item-margin-top" style="max-width:1400px;">
 
-    <!-- The Contact Section -->
-  
-  <div class="item-container item-content item-padding-64" style="max-width:800px" id="contact">
-    <div class="item-card-4 item-white item-text-grey">
+  <!-- The Grid -->
+  <div class="item-container">    
+      <div class="item-container item-card item-white item-margin-bottom">
+        <div class="item-container">
+           <div class="item-container " id="contact">
     <h2 class="item-wide item-center">CONTACT</h2>
-    <p class="item-opacity item-center"><i>Fan? Drop a note!</i></p>
+    <p class="item-opacity item-center"><i>Possue alguma dúvida, sugestão ou crítica? Envie um email!</i></p>
     <div class="item-row item-padding-32">
-      <div class="item-col m6 item-large item-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      <div class="item-row-padding item-center ">
+        <i class="fa fa-map-marker" style="width:30px"></i> Brasília, DF<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: LauanyRS1997@mail.com<br>
       </div>
-      <div class="item-col m6">
+      <br>
+      <div class="item-row-padding">
         <form action="/action_page.php" target="_blank">
           <div class="item-row-padding" style="margin:0 -16px 8px -16px">
             <div class="item-half">
-              <input class="item-input item-border" type="text" placeholder="Name" required name="Name">
+              <input class="item-input item-border" type="text" placeholder="Nome" required name="Name">
             </div>
             <div class="item-half">
-              <input class="item-input item-border" type="text" placeholder="Email" required name="Email">
+              <input class="item-input item-border" type="text" placeholder="E-mail" required name="Email">
             </div>
           </div>
-          <input class="item-input item-border" type="text" placeholder="Message" required name="Message">
-          <button class="item-button item-black item-section item-right" type="submit">SEND</button>
+          <input class="item-input item-border" type="text" placeholder="Message" required name="Messagem">
+          <button class="item-button item-teal item-section item-right" type="submit">Enviar</button>
         </form>
       </div>
     </div>
   </div>
+        </div>
+      </div>
+   
+  <!-- End Grid -->
   </div>
+  
+  <!-- End Page Container -->
+</div>
 
 <!-- Footer -->
   <footer class="item-container item-padding-16 item-dark-grey">
@@ -93,6 +106,28 @@
 </div>
 
 <script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function item_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function item_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
 </script>
 
 </body>
