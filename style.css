@@ -2,9 +2,32 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+.item-ul-breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #ddd;
+}
+
+.item-ul-breadcrumb .item-li {
+  display: inline;
+  font-size: 18px;
+}
+.item-ul-breadcrumb .item-li+.item-li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+.item-ul-breadcrumb .item-li .item-a {
+  color: teal;
+  text-decoration: none;
+}
+.item-ul-breadcrumb .item-li .item-a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
 .item-accordion {
-  background-color: teal;
-  color: #fff;
+  background-color: #444;
+  color: #eee;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -21,7 +44,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 
 .item-accordion:after {
   content: '\1F893';
-  color: #fff;
+  color: #eee;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -428,7 +451,7 @@ ul {
 }
 
 /* Style the list items */
-ul li {
+.item-ul-list .item-li-list {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -445,24 +468,24 @@ ul li {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+.item-ul-list .item-li-list:nth-child(odd) {
   background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
-ul li:hover {
+.item-ul-list .item-li-list:hover {
   background: #ddd;
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+.item-ul-list .item-li-list item-li-list.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+.item-ul-list item-li-list.checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
@@ -487,25 +510,4 @@ ul li.checked::before {
   background-color: #f44336;
   color: white;
 }
-.item-ul-breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-.item-ul-breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-.item-ul-breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-.item-ul-breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-.item-ul-breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
+
