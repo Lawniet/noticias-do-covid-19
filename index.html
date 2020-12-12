@@ -3,612 +3,614 @@
 <title>Notícias do COVID-19</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 <body class="item-light-grey">
-      <script src="script.js"></script>
+    <script src="script.js"></script>
 
-<!-- Top container -->
-<div class="item-bar item-top item-black item-large" style="z-index:4">
-  <button class="item-bar-item item-button item-hide-large item-hover-none item-hover-text-light-grey" onclick="item_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="item-bar-item item-right"> Gama Academy</span>
-</div>
+    <!-- Top container -->
+    <div class="item-bar item-top item-black item-large" style="z-index:4">
+        <button class="item-bar-item item-button item-hide-large item-hover-none item-hover-text-light-grey" onclick="item_open();"><i class="fa fa-bars"></i>  Menu</button>
+        <span class="item-bar-item item-right"> Gama Academy</span>
+    </div>
 
-<!-- Sidebar/menu -->
-<nav class="item-sidebar item-collapse item-white item-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="item-container">
-    <h5>COVID-19: BRASIL</h5>
-  </div>
-    <div class="item-bar-block">
-    <a href="#" class="item-bar-item item-button item-padding-16 item-hide-large item-dark-grey item-hover-black" onclick="item_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="index.html" class="item-bar-item item-button item-padding item-teal"><i class="fa fa-newspaper-o fa-fw" aria-hidden="true"></i> Notícias</a>
-    <a href="about.html" class="item-bar-item item-button item-padding"><i class="fa fa-id-card" aria-hidden="true"></i> Sobre mim</a>
-    <a href="contact.html" class="item-bar-item item-button item-padding"><i class ="fa fa-envelope fa-fw" aria-hidden="true"></i> Contato</a>
-    <a href="knowmore.html" class="item-bar-item item-button item-padding"><i class="fa fa-eye fa-fw" aria-hidden="true"></i> Saber Mais</a>
-  </div>
-</nav>
-
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="item-overlay item-hide-large item-animate-opacity" onclick="item_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="item-main" style="margin-left:300px;margin-top:43px;">
+    <!-- Sidebar/menu -->
+    <nav class="item-sidebar item-collapse item-white item-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
         <div class="item-container">
-          <br>
-   <ul class="item-ul-breadcrumb">
-  <li class="item-li"><a class="item-a" href="#">Home</a></li>
-  <li class="item-li">Notícias</li>
-</ul>
-<br>
-           <div class="item-container item-card item-white item-margin-bottom"> 
-           <!-- Header -->
-  <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-bell"></i> COVID-19 no Brasil em números</b></h5>
-  </header>
+            <h5>COVID-19: BRASIL</h5>
+        </div>
+        <div class="item-bar-block">
+            <a href="#" class="item-bar-item item-button item-padding-16 item-hide-large item-dark-grey item-hover-black" onclick="item_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <a href="index.html" class="item-bar-item item-button item-padding item-teal"><i class="fa fa-newspaper-o fa-fw" aria-hidden="true"></i> Notícias</a>
+            <a href="about.html" class="item-bar-item item-button item-padding"><i class="fa fa-id-card" aria-hidden="true"></i> Sobre mim</a>
+            <a href="contact.html" class="item-bar-item item-button item-padding"><i class ="fa fa-envelope fa-fw" aria-hidden="true"></i> Contato</a>
+            <a href="knowmore.html" class="item-bar-item item-button item-padding"><i class="fa fa-eye fa-fw" aria-hidden="true"></i> Saber Mais</a>
+        </div>
+    </nav>
 
-  <div class="item-row-padding item-margin-bottom">
-  <div class="item-quarter">
-      <div class="item-container item-teal item-text-white item-padding-16">
-        <div class="item-left"><i class="fa fa-users item-xxxlarge"></i></div>
-        <div class="item-right">
-          <h3>210.147.125</h3>
-        </div>
-        <div class="item-clear"></div>
-        <h4>População total</h4>
-      </div>
-    </div>
-    <div class="item-quarter">
-      <div class="item-container item-red item-padding-16">
-        <div class="item-left"><i class="fas fa-skull-crossbones item-xxxlarge"></i></div>
-        <div class="item-right">
-          <h3>179.765</h3>
-        </div>
-        <div class="item-clear"></div>
-        <h4>Óbitos acumulados</h4>
-      </div>
-    </div>
-    <div class="item-quarter">
-      <div class="item-container item-orange item-text-white item-padding-16">
-        <div class="item-left"><i class="fas fa-viruses item-xxxlarge"></i></div>
-        <div class="item-right">
-          <h3>6.781.799</h3>
-        </div>
-        <div class="item-clear"></div>
-        <h4>Casos acumulados</h4>
-      </div>
-    </div>
-        <div class="item-quarter">
-      <div class="item-container item-blue item-padding-16">
-        <div class="item-left"><i class="fas fa-medkit item-xxxlarge"></i></div>
-        <div class="item-right">
-          <h3>5.931.777</h3>
-        </div>
-        <div class="item-clear"></div>
-        <h4>Casos recuperados</h4>
-      </div>
-    </div>
-  </div>
-  <br>
-        </div>
-   </div>  
-<div class="item-container">
-      <div class="item-container item-card item-white item-margin-bottom">
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="item-overlay item-hide-large item-animate-opacity" onclick="item_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="item-main" style="margin-left:300px;margin-top:43px;">
         <div class="item-container">
-           <!-- Header -->
-  <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-clipboard-list"></i> Estimatimativas por estados</b></h5>
-  </header>
-        <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-yellow item-large"></i> Centro-Oeste</button>
-  <div class="item-accordion-panel">
-<br>
-<table id="myTable">
-  <tr class="header">
-    <th style="width:50%;">Estado</th>
-    <th style="width:30%;">Casos confirmados</th>
-    <th style="width:20%;">Atualização</th>
-  </tr>
-  <tr>
-    <td>Distrito Federal - DF</td>
-    <td>237.114</td>
-    <td><i>11/12 18:55</i></td>
-  </tr>
-  <tr>
-    <td>Goiás - GO</td>
-    <td>290.814</td>
-    <td><i>11/12 18:55</i></td>
-  </tr>
-  <tr>
-    <td>Mato Grosso do Sul - MS</td>
-    <td>109.785</td>
-    <td><i>11/12 18:55</i></td>
-  </tr>
-  <tr>
-    <td>Mato Grosso - MT</td>
-    <td>164.599</td>
-    <td><i>11/12 18:55</i></td>
-  </tr> 
-</table>
-<br>
-  </div>
-  
-  <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-red item-large"></i> Nordeste</button>
-  <div class="item-accordion-panel">
-<br>
-<table id="myTable">
-  <tr class="header">
-    <th style="width:50%;">Estado</th>
-    <th style="width:30%;">Casos confirmados</th>
-    <th style="width:20%;">Atualização</th>
-  </tr>
-  <tr>
-            <td>Alagoas - AL</td>
-            <td>97.562</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>  
-          <tr>
-            <td>Bahia - BA</td>
-            <td>436.662</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Cerará - CE</td>
-            <td>313.439</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>	
-		  <tr>
-            <td>Maranhão - MA</td>
-            <td>196.446</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Paraíba - PB</td>
-            <td>152.073</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Pernambuco - PE</td>
-            <td>195.118</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Piaí - PI</td>
-            <td>133.336</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Rio Grande do Norte - RN</td>
-            <td>101.209</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Sergipe - SE</td>
-            <td>96.990</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-          </table>
-          <br>
-  </div>
-  
-    <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-yellow item-large"></i> Norte</button>
-  <div class="item-accordion-panel">
-<br>
-<table id="myTable">
-  <tr class="header">
-    <th style="width:50%;">Estado</th>
-    <th style="width:30%;">Casos confirmados</th>
-    <th style="width:20%;">Atualização</th>
-  </tr>
-  <tr>
-            <td>Acre - AC</td>
-            <td>37.902</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		   <tr>
-            <td>Amazonas - AM</td>
-            <td>185.089</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		   <tr>
-            <td>Amapá - AP</td>
-            <td>62.221</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		   <tr>
-            <td>Pará - PA</td>
-            <td>278.066</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		   <tr>
-            <td>Rondônia - RO</td>
-            <td>84.919</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		   <tr>
-            <td>Roraima - RR</td>
-            <td>65.595</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		   <tr>
-            <td>Tocantins - TO</td>
-            <td>84.637</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-          </table>
-          <br>
-  </div>
-  
-      <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-red item-large"></i> Sudeste</button>
-  <div class="item-accordion-panel">
-<br>
-<table id="myTable">
-  <tr class="header">
-    <th style="width:50%;">Estado</th>
-    <th style="width:30%;">Casos confirmados</th>
-    <th style="width:20%;">Atualização</th>
-  </tr>
-   <tr>
-            <td>Espírito Santo - ES</td>
-            <td>208.252</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Minas Gerais - MG</td>
-            <td>453.364</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Rio de Janeiro - RJ</td>
-            <td>381.644</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>São Paulo - SP</td>
-            <td>1.316.371</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-          </table>
-          <br>
-  </div>
-  
-      <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-orange item-large"></i> Sul</button>
-  <div class="item-accordion-panel">
-<br>
-<table id="myTable">
-  <tr class="header">
-    <th style="width:50%;">Estado</th>
-    <th style="width:30%;">Casos confirmados</th>
-    <th style="width:20%;">Atualização</th>
-  </tr>
-  <tr>
-            <td>Santa Catarina - SC</td>
-            <td>416.752</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Paraná - PR</td>
-            <td>317.861</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-		  <tr>
-            <td>Rio Grande do Sul - RS</td>
-            <td>363.979</td>
-            <td><i>11/12 18:55</i></td>
-          </tr>
-          </table>
-          <br>
-  </div>
-  <span>Fonte: Secretarias Estaduais de Saúde. Brasil, 2020</span>
+            <br>
+            <ul class="item-ul-breadcrumb">
+                <li class="item-li"><a class="item-a" href="#">Home</a></li>
+                <li class="item-li">Notícias</li>
+            </ul>
+            <br>
+            <div class="item-container item-card item-white item-margin-bottom">
+                <!-- Header -->
+                <header class="item-container" style="padding-top:22px">
+                    <h5><b><i class="fas fa-bell"></i> COVID-19 no Brasil em números</b></h5>
+                </header>
+
+                <div class="item-row-padding item-margin-bottom">
+                    <div class="item-quarter">
+                        <div class="item-container item-teal item-text-white item-padding-16">
+                            <div class="item-left"><i class="fa fa-users item-xxxlarge"></i></div>
+                            <div class="item-right">
+                                <h3>210.147.125</h3>
+                            </div>
+                            <div class="item-clear"></div>
+                            <h4>População total</h4>
+                        </div>
+                    </div>
+                    <div class="item-quarter">
+                        <div class="item-container item-red item-padding-16">
+                            <div class="item-left"><i class="fas fa-skull-crossbones item-xxxlarge"></i></div>
+                            <div class="item-right">
+                                <h3>179.765</h3>
+                            </div>
+                            <div class="item-clear"></div>
+                            <h4>Óbitos acumulados</h4>
+                        </div>
+                    </div>
+                    <div class="item-quarter">
+                        <div class="item-container item-orange item-text-white item-padding-16">
+                            <div class="item-left"><i class="fas fa-viruses item-xxxlarge"></i></div>
+                            <div class="item-right">
+                                <h3>6.781.799</h3>
+                            </div>
+                            <div class="item-clear"></div>
+                            <h4>Casos acumulados</h4>
+                        </div>
+                    </div>
+                    <div class="item-quarter">
+                        <div class="item-container item-blue item-padding-16">
+                            <div class="item-left"><i class="fas fa-medkit item-xxxlarge"></i></div>
+                            <div class="item-right">
+                                <h3>5.931.777</h3>
+                            </div>
+                            <div class="item-clear"></div>
+                            <h4>Casos recuperados</h4>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
         </div>
-        <br>
-      </div>
-          
-  </div>
-<div class="item-container">
-    
-      <div class="item-container item-card item-white item-margin-bottom">
         <div class="item-container">
-           <!-- Header -->
-  <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-newspaper"></i> Principais notícias</b></h5>
-  </header>
-    <div class="item-row">
-      <div class="item-col m2 text-center">
-        <img class="item-circle" src="images/icon_g1.png" style="width:96px;height:96px">
-      </div>
-      <div class="item-col m10 item-container">
-        <h4>g1.globo.com <span class="item-opacity item-medium"> 09/12/2020, 08:15 AM</span></h4>
-        <p>Vacina contra a Covid-19: entenda se quem já teve a doença deve ser imunizado</p><a href="https://g1.globo.com/bemestar/vacina/noticia/2020/12/09/vacina-contra-a-covid-19-entenda-se-quem-ja-teve-a-doenca-deve-ser-imunizado.ghtml" target="_blank">
+            <div class="item-container item-card item-white item-margin-bottom">
+                <div class="item-container">
+                    <!-- Header -->
+                    <header class="item-container" style="padding-top:22px">
+                        <h5><b><i class="fas fa-clipboard-list"></i> Estimatimativas por estados</b></h5>
+                    </header>
+                    <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-yellow item-large"></i> Centro-Oeste</button>
+                    <div class="item-accordion-panel">
+                        <br>
+                        <table id="myTable">
+                            <tr class="header">
+                                <th style="width:50%;">Estado</th>
+                                <th style="width:30%;">Casos confirmados</th>
+                                <th style="width:20%;">Atualização</th>
+                            </tr>
+                            <tr>
+                                <td>Distrito Federal - DF</td>
+                                <td>237.114</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Goiás - GO</td>
+                                <td>290.814</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Mato Grosso do Sul - MS</td>
+                                <td>109.785</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Mato Grosso - MT</td>
+                                <td>164.599</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+
+                    <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-red item-large"></i> Nordeste</button>
+                    <div class="item-accordion-panel">
+                        <br>
+                        <table id="myTable">
+                            <tr class="header">
+                                <th style="width:50%;">Estado</th>
+                                <th style="width:30%;">Casos confirmados</th>
+                                <th style="width:20%;">Atualização</th>
+                            </tr>
+                            <tr>
+                                <td>Alagoas - AL</td>
+                                <td>97.562</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Bahia - BA</td>
+                                <td>436.662</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Cerará - CE</td>
+                                <td>313.439</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Maranhão - MA</td>
+                                <td>196.446</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Paraíba - PB</td>
+                                <td>152.073</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Pernambuco - PE</td>
+                                <td>195.118</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Piaí - PI</td>
+                                <td>133.336</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Rio Grande do Norte - RN</td>
+                                <td>101.209</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Sergipe - SE</td>
+                                <td>96.990</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+
+                    <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-yellow item-large"></i> Norte</button>
+                    <div class="item-accordion-panel">
+                        <br>
+                        <table id="myTable">
+                            <tr class="header">
+                                <th style="width:50%;">Estado</th>
+                                <th style="width:30%;">Casos confirmados</th>
+                                <th style="width:20%;">Atualização</th>
+                            </tr>
+                            <tr>
+                                <td>Acre - AC</td>
+                                <td>37.902</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Amazonas - AM</td>
+                                <td>185.089</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Amapá - AP</td>
+                                <td>62.221</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Pará - PA</td>
+                                <td>278.066</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Rondônia - RO</td>
+                                <td>84.919</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Roraima - RR</td>
+                                <td>65.595</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Tocantins - TO</td>
+                                <td>84.637</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+
+                    <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-red item-large"></i> Sudeste</button>
+                    <div class="item-accordion-panel">
+                        <br>
+                        <table id="myTable">
+                            <tr class="header">
+                                <th style="width:50%;">Estado</th>
+                                <th style="width:30%;">Casos confirmados</th>
+                                <th style="width:20%;">Atualização</th>
+                            </tr>
+                            <tr>
+                                <td>Espírito Santo - ES</td>
+                                <td>208.252</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Minas Gerais - MG</td>
+                                <td>453.364</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Rio de Janeiro - RJ</td>
+                                <td>381.644</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>São Paulo - SP</td>
+                                <td>1.316.371</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+
+                    <button class="item-accordion"><i class="fas fa-map-marked-alt item-text-orange item-large"></i> Sul</button>
+                    <div class="item-accordion-panel">
+                        <br>
+                        <table id="myTable">
+                            <tr class="header">
+                                <th style="width:50%;">Estado</th>
+                                <th style="width:30%;">Casos confirmados</th>
+                                <th style="width:20%;">Atualização</th>
+                            </tr>
+                            <tr>
+                                <td>Santa Catarina - SC</td>
+                                <td>416.752</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Paraná - PR</td>
+                                <td>317.861</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                            <tr>
+                                <td>Rio Grande do Sul - RS</td>
+                                <td>363.979</td>
+                                <td><i>11/12 18:55</i></td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <span>Fonte: Secretarias Estaduais de Saúde. Brasil, 2020</span>
+                </div>
+                <br>
+            </div>
+
+        </div>
+        <div class="item-container">
+
+            <div class="item-container item-card item-white item-margin-bottom">
+                <div class="item-container">
+                    <!-- Header -->
+                    <header class="item-container" style="padding-top:22px">
+                        <h5><b><i class="fas fa-newspaper"></i> Principais notícias</b></h5>
+                    </header>
+                    <div class="item-row">
+                        <div class="item-col m2 text-center">
+                            <img class="item-circle" src="images/icon_g1.png" style="width:96px;height:96px">
+                        </div>
+                        <div class="item-col m10 item-container">
+                            <h4>g1.globo.com <span class="item-opacity item-medium"> 09/12/2020, 08:15 AM</span></h4>
+                            <p>Vacina contra a Covid-19: entenda se quem já teve a doença deve ser imunizado</p><a href="https://g1.globo.com/bemestar/vacina/noticia/2020/12/09/vacina-contra-a-covid-19-entenda-se-quem-ja-teve-a-doenca-deve-ser-imunizado.ghtml"
+                                target="_blank">
 		Ler mais
 		</a>
-      </div>
-    </div>
-<br>
-    <div class="item-row">
-      <div class="item-col m2 text-center">
-        <img class="item-circle" src="images/icon_r7.png" style="width:96px;height:96px">
-      </div>
-      <div class="item-col m10 item-container">
-        <h4>noticias.r7.com <span class="item-opacity item-medium">01/03/2020, 07:25 PM</span></h4>
-        <p>Como limpar o celular para se proteger do coronavírus</p><a href="https://noticias.r7.com/tecnologia-e-ciencia/como-limpar-o-celular-para-se-proteger-do-coronavirus-02042020" target="_blank">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item-row">
+                        <div class="item-col m2 text-center">
+                            <img class="item-circle" src="images/icon_r7.png" style="width:96px;height:96px">
+                        </div>
+                        <div class="item-col m10 item-container">
+                            <h4>noticias.r7.com <span class="item-opacity item-medium">01/03/2020, 07:25 PM</span></h4>
+                            <p>Como limpar o celular para se proteger do coronavírus</p><a href="https://noticias.r7.com/tecnologia-e-ciencia/como-limpar-o-celular-para-se-proteger-do-coronavirus-02042020" target="_blank">
 		Ler mais
 		</a>
-      </div>
-    </div>
-<br>
-    <div class="item-row">
-      <div class="item-col m2 text-center">
-        <img class="item-circle" src="images/icon_bbc.png" style="width:96px;height:96px">
-      </div>
-      <div class="item-col m10 item-container">
-        <h4>bbc.com <span class="item-opacity item-medium">08/11/2020, 08:01 PM</span></h4>
-        <p>A mulher de 90 anos que estreou vacinação contra covid-19 no Reino Unido</p><a href="https://www.bbc.com/portuguese/55240348" target="_blank">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item-row">
+                        <div class="item-col m2 text-center">
+                            <img class="item-circle" src="images/icon_bbc.png" style="width:96px;height:96px">
+                        </div>
+                        <div class="item-col m10 item-container">
+                            <h4>bbc.com <span class="item-opacity item-medium">08/11/2020, 08:01 PM</span></h4>
+                            <p>A mulher de 90 anos que estreou vacinação contra covid-19 no Reino Unido</p><a href="https://www.bbc.com/portuguese/55240348" target="_blank">
 		Ler mais
 		</a>
-      </div>
-    </div><br>
-    <div class="item-row">
-      <div class="item-col m2 text-center">
-        <img class="item-circle" src="images/icon_elpais.png" style="width:96px;height:96px">
-      </div>
-      <br>
-      <div class="item-col m10 item-container">
-        <h4>elpais.com <span class="item-opacity item-medium">08/11/2020, 04:37 PM</span></h4>
-        <p>Novos relatórios reforçam eficácia e segurança das primeiras vacinas contra o coronavírus</p>
-		<a href="https://brasil.elpais.com/ciencia/2020-12-08/novos-relatorios-reforcam-eficacia-e-seguranca-das-primeiras-vacinas-contra-o-coronavirus.html" target="_blank">
+                        </div>
+                    </div><br>
+                    <div class="item-row">
+                        <div class="item-col m2 text-center">
+                            <img class="item-circle" src="images/icon_elpais.png" style="width:96px;height:96px">
+                        </div>
+                        <br>
+                        <div class="item-col m10 item-container">
+                            <h4>elpais.com <span class="item-opacity item-medium">08/11/2020, 04:37 PM</span></h4>
+                            <p>Novos relatórios reforçam eficácia e segurança das primeiras vacinas contra o coronavírus</p>
+                            <a href="https://brasil.elpais.com/ciencia/2020-12-08/novos-relatorios-reforcam-eficacia-e-seguranca-das-primeiras-vacinas-contra-o-coronavirus.html" target="_blank">
 		Ler mais
 		</a>
-      </div>
-      <br>
-    </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+        </div>
+        <div class="item-container">
+            <div class="item-container item-card item-white item-margin-bottom">
+                <div class="item-container">
+                    <!-- Header -->
+                    <header class="item-container" style="padding-top:22px">
+                        <h5><b><i class="fas fa-photo-video"></i> Mapas interativos</b></h5>
+                    </header>
+                    <!-- Automatic Slideshow Images -->
+                    <div class="item-slideshow-container">
+
+                        <div class="item-mySlides item-fade">
+                            <div class="item-numbertext">1 / 3</div>
+                            <a href="https://sigageomarketing.com.br/impactoeconomico/" target="_blank" title="Acessar mapa interativo"><img src="images/mapa_1.png" style="width:100%"></a>
+                            <div class="item-text">Índice de Impacto Ecônomico da COVID-19</div>
+                        </div>
+                        <div class="item-mySlides item-fade">
+                            <div class="item-numbertext">2 / 3</div>
+                            <a href="https://sigageomarketing.com.br/mobilidade/" target="_blank" title="Acessar mapa interativo"><img src="images/mapa_2.png" style="width:100%"></a>
+                            <div class="item-text">Variação da mobilidade das pessoas pela COVID-19</div>
+                        </div>
+                        <div class="item-mySlides item-fade">
+                            <div class="item-numbertext">3 / 3</div>
+                            <a href="https://sigageomarketing.com.br/coronavirus/" target="_blank" title="Acessar mapa interativo"><img src="images/mapa_3.png" style="width:100%"></a>
+                            <div class="item-text">COVID-19 por UF: Casos e mortes confirmadas</div>
+                        </div>
+
+                        <a class="item-prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="item-next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="item-dot" onclick="currentSlide(1)"></span>
+                        <span class="item-dot" onclick="currentSlide(2)"></span>
+                        <span class="item-dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <span>Fonte: Secretarias Estaduais de Saúde. Brasil, 2020</span>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="item-container">
+
+            <div class="item-container item-card item-white item-margin-bottom">
+                <div class="item-container">
+                    <!-- Header -->
+                    <header class="item-container" style="padding-top:22px">
+                        <h5><b><i class="fas fa-signal"></i> Utilização dos hospitais por estado</b></h5>
+                    </header>
+                    <p>Centro-Oeste</p>
+                    <div class="item-grey">
+                        <div class="item-container item-center item-padding item-orange" style="width:61%">61%</div>
+                    </div>
+
+                    <p>Nordeste</p>
+                    <div class="item-grey">
+                        <div class="item-container item-center item-padding item-red" style="width:96%">96%</div>
+                    </div>
+
+                    <p>Norte</p>
+                    <div class="item-grey">
+                        <div class="item-container item-center item-padding item-red" style="width:99%">99%</div>
+                    </div>
+
+                    <p>Sudeste</p>
+                    <div class="item-grey">
+                        <div class="item-container item-center item-padding item-red" style="width:89%">89%</div>
+                    </div>
+
+                    <p>Sul</p>
+                    <div class="item-grey">
+                        <div class="item-container item-center item-padding item-orange" style="width:71.4%">71,4%</div>
+                    </div>
+                    <br>
+                    <button class="item-button item-dark-grey">Mais informações  <i class="fa fa-arrow-right"></i></button>
+                </div>
+                <br>
+            </div>
+
+        </div>
+
+        <div class="item-container">
+
+            <div class="item-container item-card item-white item-margin-bottom">
+                <div class="item-container">
+                    <!-- Header -->
+                    <header class="item-container" style="padding-top:22px">
+                        <h5><b><i class="fas fa-lightbulb"></i> Dicas simples evitar o COVID-19</b></h5>
+                    </header>
+                    <div class="item-white item-text-grey">
+                        <ul class="item-ul-list" id="myUL">
+                            <li class="item-li-list"><i class="fas fa-house-user"></i> FICAR EM CASA</li>
+                            <li class="item-li-list"><i class="fas fa-user-clock"></i> PLANEJAR BEM AS SAÍDAS </li>
+                            <li class="item-li-list"><i class="fas fa-head-side-mask"></i> CUBRIR TOSSE OU ESPIRRO</li>
+                            <li class="item-li-list"><i class="fas fa-users-slash"></i> EVITAR AGLOMERAÇÕES</li>
+                            <li class="item-li-list"><i class="fas fa-people-arrows"></i> MANTER O DISTANCIAMENTO SOCIAL</li>
+                            <li class="item-li-list"><i class="fas fa-hand-sparkles"></i> EVITAR TOCAR NO ROSTO</li>
+                            <li class="item-li-list"><i class="fas fa-tint-slash"></i> EVITAR COMPARTILHAR ITENS PESSOAIS</li>
+                            <li class="item-li-list"><i class="fas fa-hands-wash"></i> LAVAR AS MÃOS COM SABÃO: 20 SEGUNDOS</li>
+                            <li class="item-li-list"><i class="fas fa-hand-holding-water"></i> UTILIZAR ÁLCOOL GEL</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+            </div>
+
         </div>
         <br>
-      </div>
-     
-  </div>
-  <div class="item-container">  
-      <div class="item-container item-card item-white item-margin-bottom">
-        <div class="item-container">
-           <!-- Header -->
-  <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-photo-video"></i> Mapas interativos</b></h5>
-  </header>
-		<!-- Automatic Slideshow Images -->		
-<div class="item-slideshow-container">
+        <!-- Footer -->
+        <footer class="item-container item-padding-16 item-dark-grey">
+            <div class="item-row">
+                <div class="item-container item-third">
+                    <h5 class="item-bottombar item-border-teal">Copyright &copy; 2020 Gama Academy</h5>
+                </div>
+                <div class="item-container item-third">
+                    <h5 class="item-bottombar item-border-teal">Dados obtidos em covid.saude.gov</h5>
+                </div>
+                <div class="item-container item-third">
+                    <h5 class="item-bottombar item-border-teal">Desenvolvido por <a href="https://github.com/Lawniet" target="_blank">Lauany Reis da Silva</a></h5>
+                </div>
+            </div>
+        </footer>
 
-<div class="item-mySlides item-fade">
-  <div class="item-numbertext">1 / 3</div>
-  <a href="https://sigageomarketing.com.br/impactoeconomico/" target="_blank" title="Acessar mapa interativo"><img src="images/mapa_1.png" style="width:100%"></a>
-  <div class="item-text">Índice de Impacto Ecônomico da COVID-19</div>
-</div>
-<div class="item-mySlides item-fade">
-  <div class="item-numbertext">2 / 3</div>
-   <a href="https://sigageomarketing.com.br/mobilidade/" target="_blank" title="Acessar mapa interativo"><img src="images/mapa_2.png" style="width:100%"></a>
-  <div class="item-text">Variação da mobilidade das pessoas pela COVID-19</div>
-</div>
-<div class="item-mySlides item-fade">
-  <div class="item-numbertext">3 / 3</div>
-   <a href="https://sigageomarketing.com.br/coronavirus/" target="_blank" title="Acessar mapa interativo"><img src="images/mapa_3.png" style="width:100%"></a>
-  <div class="item-text">COVID-19 por UF: Casos e mortes confirmadas</div>
-</div>
 
-<a class="item-prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="item-next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-<div style="text-align:center">
-  <span class="item-dot" onclick="currentSlide(1)"></span> 
-  <span class="item-dot" onclick="currentSlide(2)"></span> 
-  <span class="item-dot" onclick="currentSlide(3)"></span> 
-</div>
-        <span>Fonte: Secretarias Estaduais de Saúde. Brasil, 2020</span>
-  </div>
-  <br>
-        </div>
-      </div>
-  <div class="item-container">
-    
-      <div class="item-container item-card item-white item-margin-bottom">
-        <div class="item-container">
-            <!-- Header -->
-  <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-signal"></i> Utilização dos hospitais por estado</b></h5>
-  </header>
-    <p>Centro-Oeste</p>
-    <div class="item-grey">
-      <div class="item-container item-center item-padding item-orange" style="width:61%">61%</div>
+        <!-- End page content -->
     </div>
 
-    <p>Nordeste</p>
-    <div class="item-grey">
-      <div class="item-container item-center item-padding item-red" style="width:96%">96%</div>
-    </div>
-
-    <p>Norte</p>
-    <div class="item-grey">
-      <div class="item-container item-center item-padding item-red" style="width:99%">99%</div>
-    </div>
-	
-	<p>Sudeste</p>
-    <div class="item-grey">
-      <div class="item-container item-center item-padding item-red" style="width:89%">89%</div>
-    </div>
-	
-	<p>Sul</p>
-    <div class="item-grey">
-      <div class="item-container item-center item-padding item-orange" style="width:71.4%">71,4%</div>
-    </div>
-  <br>
-    <button class="item-button item-dark-grey">Mais informações  <i class="fa fa-arrow-right"></i></button>
-        </div>
-        <br>
-      </div>
-   
-  </div>
-
-  <div class="item-container">
-    
-      <div class="item-container item-card item-white item-margin-bottom">
-        <div class="item-container">
-            <!-- Header -->
-  <header class="item-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-lightbulb"></i> Dicas simples evitar o COVID-19</b></h5>
-  </header>
-  <div class="item-white item-text-grey">
-<ul class="item-ul-list" id="myUL">
-  <li class="item-li-list"><i class="fas fa-house-user"></i> FICAR EM CASA</li>
-  <li class="item-li-list"><i class="fas fa-user-clock"></i> PLANEJAR BEM AS SAÍDAS </li>
-  <li class="item-li-list"><i class="fas fa-head-side-mask"></i> CUBRIR TOSSE OU ESPIRRO</li>
-  <li class="item-li-list"><i class="fas fa-users-slash"></i> EVITAR AGLOMERAÇÕES</li>
-  <li class="item-li-list"><i class="fas fa-people-arrows"></i> MANTER O DISTANCIAMENTO SOCIAL</li>
-  <li class="item-li-list"><i class="fas fa-hand-sparkles"></i> EVITAR TOCAR NO ROSTO</li>
-  <li class="item-li-list"><i class="fas fa-tint-slash"></i> EVITAR COMPARTILHAR ITENS PESSOAIS</li>
-  <li class="item-li-list"><i class="fas fa-hands-wash"></i> LAVAR AS MÃOS COM SABÃO: 20 SEGUNDOS</li>
-  <li class="item-li-list"><i class="fas fa-hand-holding-water"></i> UTILIZAR ÁLCOOL GEL</li>
-</ul>
-</div>
-        </div>
-        <br>
-      </div>
-    
-</div>
-<br>
-   <!-- Footer -->
-  <footer class="item-container item-padding-16 item-dark-grey">
-	  <div class="item-row">
-		  <div class="item-container item-third">
-			<h5 class="item-bottombar item-border-teal">Copyright &copy; 2020 Gama Academy</h5>
-		  </div>
-		  <div class="item-container item-third">
-			<h5 class="item-bottombar item-border-teal">Dados obtidos em covid.saude.gov</h5>
-		  </div>
-		  <div class="item-container item-third">
-			<h5 class="item-bottombar item-border-teal">Desenvolvido por <a href="https://github.com/Lawniet" target="_blank">Lauany Reis da Silva</a></h5>
-		  </div>
-	  </div>
-  </footer>
-
-
-  <!-- End page content -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function item_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function item_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("item-mySlides");
-  var dots = document.getElementsByClassName("item-dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-var acc = document.getElementsByClassName("item-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
-
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
-
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-</script>
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+        
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function item_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+          } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+          }
+        }
+        
+        // Close the sidebar with the close button
+        function item_close() {
+          mySidebar.style.display = "none";
+          overlayBg.style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("item-mySlides");
+          var dots = document.getElementsByClassName("item-dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        var acc = document.getElementsByClassName("item-accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        
+        // Create a "close" button and append it to each list item
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          myNodelist[i].appendChild(span);
+        }
+        
+        // Click on a close button to hide the current list item
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+        
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+          if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+          }
+        }, false);
+    </script>
 
 </body>
+
 </html>
