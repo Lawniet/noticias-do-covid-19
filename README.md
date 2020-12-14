@@ -8,7 +8,7 @@ O aplicativo foi baseado e desenvolvido a partir das aulas e conteúdos ofertado
 
 As tecnologias que foram utilizadas estão listadas abaixo com sua função dentro do projeto:
 
-- HAML, CSS e Javascript - Foi utilizada para a composição visual do front-end;
+- HTML, CSS e Javascript - Foi utilizada para a composição visual do front-end;
 - Repl.it - É uma IDE online que permite a visualização simultânea de aplicações Web e será utilizada no início do desenvolvimento;
 - GitHub - Será utilizada para versionamento e armazenamento do código na nuvem;
 - Netfly - Onde foi hospedada a versão final da landing page;
@@ -24,6 +24,6 @@ Todo o processo de desenvolvimento foi hospedado na IDE online Repl.it, pois est
 
 ## :link: Versões de execução disponíveis
 
-Protótipo: [Notícias COVID-19 Brasil](https://noticias-covid-19-brasil.netlify.app/)
+Landing Page: [Notícias COVID-19 Brasil](https://noticias-covid-19-brasil.netlify.app/)
 
 
