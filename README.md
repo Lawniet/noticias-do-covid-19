@@ -1,5 +1,7 @@
 # Gama Experience 
 
+![noticias-do-covid-19/](https://github.com/Lawniet/noticias-do-covid-19/blob/master/noticias-covid-19-brasil.png)
+
 Repositório de material desenvolvido no Desafio da Gama Academy, com o objetivo de criar uma landing page de Página de Notícias do COVID-19 hard coded.
 
 O aplicativo foi baseado e desenvolvido a partir das aulas e conteúdos ofertados na própria plataforma do aluno e dos conteúdos do [W3Schools](https://www.w3schools.com/).
