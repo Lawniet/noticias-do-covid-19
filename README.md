@@ -1,4 +1,4 @@
-# GM Experience 
+# Gama Experience 
 
 Repositório de material desenvolvido no Desafio da Gama Academy, com o objetivo de criar uma landing page de Página de Notícias do COVID-19 hard coded.
 
